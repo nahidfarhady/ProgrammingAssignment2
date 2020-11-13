@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This code will provide a capabality to see if the inv variable is already set
+## or not. If yes, then it returns the cached version.
 
-## Write a short comment describing this function
+## Four methods to set the cached variable and get the cached variable
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -18,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## If cached variable is already called, the second time we print he msg and avoid calculations
 
 cacheSolve <- function(x, ...) {
   inv <- x$getinverse()
